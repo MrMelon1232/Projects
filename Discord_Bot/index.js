@@ -20,7 +20,7 @@ bot.on('message', message => {
                     .then((response) => {
                         var totalResponse = response.data.length;
                         var responseIndex = Math.floor((Math.random() *10) +1) % totalResponse;
-                        var responseFinal = reponse.data[totalResponse];
+                        var responseFinal = response.data[totalResponse];
                         message.channel.send("Goodbye " + member.displayName + ", u have served Mr.Chungus well!", {
                             files : [responseFinal.images.fixed_height.url]
                         })    
